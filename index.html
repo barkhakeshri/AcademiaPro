@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Academia</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- font link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="animation.css"> -->
+    <!-- <script defer src="./animation.js"></script> -->
+</head>
+
+<body>
+    <main class="main-container">
+    <!-- Modal  student login-->
+    <div id="modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <!-- <span class="close" onclick="closeModal()">&times;</span> -->
+            <!-- Your login form content goes here -->
+            <!-- <div class="modal-wrapper"> -->
+
+            <div class="form-title">
+                <h2>Hello Again!</h2>
+                <p>Welcome back you've been missed!</p>
+            </div>
+            <!-- Example login form -->
+            <form action="/login" method="post" class="form-area">
+                <!-- Your login form fields -->
+                <div class="input-field">
+                    <!-- <label for="">Username</label> -->
+                    <input type="text" placeholder="Username">
+                </div>
+                <div class="input-field">
+                    <!-- <label for="">Password</label> -->
+                    <input type="password" placeholder="Password">
+                </div>
+                <div class="recover-pass">
+                    <p>Recover Password</p>
+                </div>
+
+                <button class="btn">Signin</button>
+                <div class="register-now">
+                    <p>Not a member! </p><span id="student-register" style="color: rgb(74, 74, 228);"> Register
+                        Now</span>
+                </div>
+            </form>
+            <!-- </div> -->
+        </div>
+    </div>
+
+    <!-- Modal  student create account-->
+    <div id="modal-student-register" class="modal" style="display: none;">
+        <div class="modal-content">
+            <!-- <span class="close" onclick="closeModal()">&times;</span> -->
+            <!-- Your login form content goes here -->
+            <!-- <div class="modal-wrapper"> -->
+
+            <div class="form-title">
+                <h2>Create Student Account</h2>
+                <p>Welcome back you've been missed!</p>
+            </div>
+            <!-- Example login form -->
+            <form action="/signup" method="post" class="form-area">
+                <!-- Your login form fields -->
+                <div class="input-field">
+                    <!-- <label for="">Username</label> -->
+                    <input type="text" placeholder="Username">
+                </div>
+                <div class="input-field">
+                    <!-- <label for="">Username</label> -->
+                    <input type="text" placeholder="Name">
+                </div>
+                <div class="input-field">
+                    <!-- <label for="">Username</label> -->
+                    <input type="mobile" placeholder="+91">
+                </div>
+                <div class="input-field">
+                    <!-- <label for="">Password</label> -->
+                    <input type="password" placeholder="Password">
+                </div>
+
+                <button class="btn">Create Account</button>
+                <div class="register-now">
+                    <p>Already have an account! </p><span id="signin" style="color: rgb(74, 74, 228);">Signin</span>
+                </div>
+            </form>
+            <!-- </div> -->
+        </div>
+    </div>
+
+    <div class="width-100 header">
+        <div class="container">
+            <div class="width-25 head-left">
+                <ul>
+                    <li><a href="#"><i class="fa fa-lock"></i> Staff Login</a> </li>
+                    <li id="student-login"><a href="#"><i class="fa fa-lock"></i> Student Login</a> </li>
+                </ul>
+            </div>
+
+            <div class="width-50">
+                <marquee class="notification">
+
+                    <!-----8.41 ./images/new.gif----->
+                    <span><img src="/images/new.gif"></span> Examination Notification
+                    <span><img src="./images/new.gif"></span>Get Ready To Explore The Genius In You With Genius 2023
+                    <span><img src="./images/new.gif"></span> Enrollment Form Notification 2022 23 Batch
+                </marquee>
+            </div>
+
+            <div class="width-25 head-right">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-comment">
+
+                            </i>Addmissions Open <span class="head-span">
+                                <img src="./images/new.gif"></span>
+                        </a>
+                    </li>
+
+                    <li><a href="#"><i class="fa fa-rss"></i>Blogs</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="width-30 logo">
+            <img src="./images/logo.png"> <!--logo pic-->
+            <p>Dream Academia School for Excellence</p>
+        </div>
+
+        <div class="width-70 head-menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="./aboutus.html">About us</a></li>
+                <li><a href="./addmission.html">Admission</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+                <li><a href="#">Notice Board</a></li>
+                <li><a href="./events.html">Event</a></li>
+                <li><a href="/contactus.html">Contact us</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="width-100"><img src="./images/banner3.png" class="main-banner"></div>
+
+    <section class="hidden">
+        <div class="main-section">
+            <div class="container">
+                <div class="note-event">
+                    <h2 class="heading-text mt-20">Notice Board</h2>
+                    <span class="heading-border"></span>
+                    <div class="notice-board mt-30">
+                        <marquee direction="up" behavior="scroll" scrollamount="12" style="height:300px;">
+                            <ul>
+                                <li><i class="fa-solid fa-square-check"></i>
+                                    Lorem lorem loremgcfhfgj vygfh ghjfhi</li>
+
+                                <li><i class="fa-solid fa-square-check"></i>
+                                    Lorem lorem loremgcfhfgj vygfh ghjfhi</li>
+
+                                <li><i class="fa-solid fa-square-check"></i>
+                                    Lorem lorem loremgcfhfgj vygfh ghjfhi</li>
+
+                                <li><i class="fa-solid fa-square-check"></i>
+                                    Lorem lorem loremgcfhfgj vygfh ghjfhi</li>
+
+                                <li><i class="fa-solid fa-square-check"></i>
+                                    Lorem lorem loremgcfhfgj vygfh ghjfhi</li>
+
+                                <li><i class="fa-solid fa-square-check"></i>
+                                    Lorem lorem loremgcfhfgj vygfh ghjfhi</li>
+                            </ul>
+                        </marquee>
+                    </div>
+                </div>
+
+
+
+                <div class="note-event">
+                    <h2 class="heading-text mt-20">Recent Event</h2>
+                    <span class="heading-border"></span>
+                    <marquee direction="up" behavior="scroll" scrollamount="12" style="height:400px;">
+                        <div class="event-list">
+                            <div class="event-list-items">
+                                <div class="event-date">
+                                    <p>June</p>
+                                    <h4>21</h4>
+                                </div>
+                                <div class="event-content">
+                                    <p>Maths & English</p>
+                                    <h3>Offer With Higher Package of 40</h3>
+                                </div>
+                            </div>
+
+                            <div class="event-list-items">
+                                <div class="event-date">
+                                    <p>June</p>
+                                    <h4>21</h4>
+                                </div>
+                                <div class="event-content">
+                                    <p>Maths & English</p>
+                                    <h3>Offer With Higher Package of 40</h3>
+                                </div>
+                            </div>
+
+                            <div class="event-list-items">
+                                <div class="event-date">
+                                    <p>June</p>
+                                    <h4>21</h4>
+                                </div>
+                                <div class="event-content">
+                                    <p>Maths & English</p>
+                                    <h3>Offer With Higher Package of 40</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </marquee>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- </div> -->
+
+    <!-- Campus Information -->
+    <section class="hidden">
+        <div class="main-section bg-lightgrey">
+            <div class="container">
+                <div class="width-50">
+                    <img src="./images/about-us.png" class="mt-30" style="width: 100%; padding: 20px;">
+                </div>
+
+                <div class="width-50">
+                    <div class="about-campus">
+                        <h2 class="heading-text">Campus Information</h2>
+                        <Span class="heading-border"></Span>
+                        <p>Get Ready To Explore The Genius In You With Genius 2023.
+                            Welcome To The Best Private University in
+                            M.Welcome To The Best Private University In Genius In YOu With Genius 2023.
+                        </p>
+                        <div class="width-50">
+                            <ul>
+                                <li><i class="fa-solid fa-square-check"></i>
+                                    The Best Private University</li>
+                                <li><i class="fa-solid fa-square-check"></i>
+                                    The Best Private University</li>
+                                <li><i class="fa-solid fa-square-check"></i>
+                                    The Best Private University</li>
+                            </ul>
+                        </div>
+
+                        <div class="width-50">
+                            <ul>
+                                <li><i class="fa-solid fa-square-check"></i>
+                                    The Best Private University</li>
+                                <li><i class="fa-solid fa-square-check"></i>
+                                    The Best Private University</li>
+                                <li><i class="fa-solid fa-square-check"></i>
+                                    The Best Private University</li>
+                            </ul>
+                        </div>
+
+                        <div class="width-33">
+                            <div class="about-year">
+                                <h3>65<span>+</span></h3>
+                                <h5>Year of Experience</h5>
+                            </div>
+                        </div>
+
+                        <div class="width-33">
+                            <div class="about-year">
+                                <h3>65<span>+</span></h3>
+                                <h5>Global of Student</h5>
+                            </div>
+                        </div>
+
+                        <div class="width-33">
+                            <div class="about-year">
+                                <h3>65<span>+</span></h3>
+                                <h5>Year of Experience</h5>
+                            </div>
+                        </div>
+
+
+                        <div class="width-100"><a href="#">Start Your Application
+                                <i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Achievement section -->
+    <section class="hidden">
+        <div class="main-section">
+            <div class="container">
+                <div class="width-33">
+                    <div class="achievement">
+                        <h2 class="heading-text mt-20">Achievement</h2>
+                        <span class="heading-border"></span>
+                        <h3>Get Ready to explore the genius in you with me 2023.</h3>
+                        <p>Get Ready to explore the genius in you with me 2023.
+                            Get Ready to explore the genius in you with me 2023.
+                            Get Ready to explore the genius in you with me 2023.
+                        </p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+
+                <div class="width-33">
+                    <div class="achievement-banner">
+                        <img src="./images/achievement-1.jpg">
+
+                        <h5>Award for best campus best private</h5>
+                        <p>Welcome to the best private univwrsity in jsr</p>
+                    </div>
+                </div>
+
+                <div class="width-33">
+                    <div class="achievement-banner">
+                        <img src="./images/achievement-2.jpg">
+
+                        <h5>Welcome the genius universty</h5>
+                        <p>Welcome to the best private univwrsity in jsr</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course section -->
+    <section class="hidden">
+        <div class="main-section bg-lightgrey">
+            <div class="container">
+                <div class="width-33">
+                    <div class="popular-course">
+                        <h2 class="heading-text mt-50">Our Popular Courses</h2>
+                        <span class="heading-border"></span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi sint voluptatibus est
+                            provident,
+                            perferendis, eum quo similique facere eveniet libero ipsam magni, obcaecati incidunt
+                            quidem sequi quaerat accusantium necessitatibus quasi.
+                        </p>
+                        <a href="#"><i class="fa fa-arrow-right"></i>View All Courses</a>
+                    </div>
+                </div>
+
+                <div class="width-66">
+                    <div class="width-25">
+                        <div class="course-list bg-yellow">
+                            <i class="fa fa-graduation-cap"></i>
+                            <p>B.TeCh</p>
+                        </div>
+                    </div>
+
+                    <div class="width-25">
+                        <div class="course-list bg-yellow">
+                            <i class="fa fa-graduation-cap"></i>
+                            <p>mca</p>
+                        </div>
+                    </div>
+
+                    <div class="width-25">
+                        <div class="course-list bg-yellow">
+                            <i class="fa fa-graduation-cap"></i>
+                            <p>ece</p>
+                        </div>
+                    </div>
+
+                    <div class="width-25">
+                        <div class="course-list bg-yellow">
+                            <i class="fa fa-graduation-cap"></i>
+                            <p>eee</p>
+                        </div>
+                    </div>
+
+                    <div class="width-25">
+                        <div class="course-list bg-yellow">
+                            <i class="fa fa-graduation-cap"></i>
+                            <p>bca</p>
+                        </div>
+                    </div>
+
+                    <div class="width-25">
+                        <div class="course-list bg-yellow">
+                            <i class="fa fa-graduation-cap"></i>
+                            <p>Bba</p>
+                        </div>
+                    </div>
+
+                    <div class="width-25">
+                        <div class="course-list bg-yellow">
+                            <i class="fa fa-graduation-cap"></i>
+                            <p>Bba</p>
+                        </div>
+                    </div>
+
+                    <div class="width-25">
+                        <div class="course-list bg-yellow">
+                            <i class="fa fa-graduation-cap"></i>
+                            <p>Bba</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- feedback -->
+    <section class="hidden">
+        <div class="main-section">
+            <div class="container">
+                <h2 class="heading-text mt-50">What Parents Says</h2>
+                <span class="heading-border"></span>
+                <marquee class="mt-50" behavior="scroll" scrollamount="12">
+                    <table>
+                        <tr>
+
+
+                            <!--  td prblm in same line   58.30-->
+                            <td style="width: 100px;">
+                                <div class="testimonial">
+                                    <div class="testimonial-content">
+                                        <i class="fa fa-quote-left"></i>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus dolor<br>
+                                        recusandae atque neque velit voluptatem praesentium id labore, quisquam,
+                                        eligendi<br>
+                                        rem similique aliquam sit.<br>
+                                        Dignissimos voluptas necessitatibus voluptatibus ipsum rerum.
+                                    </div>
+
+                                    <div class="testimonial-detail">
+                                        <div class="testimonial-img">
+                                            <img src="images/boy.jpg"> <!--57.44 -->
+                                        </div>
+
+                                        <div class="testimonial-name">
+                                            <h5>Johndove</h5>
+                                            <!-- <p>Data Analysis</p> -->
+                                        </div>
+                                    </div>
+                            </td>
+
+                            <td style="width: 100px;">
+                                <div class="testimonial">
+                                    <div class="testimonial-content">
+                                        <i class="fa fa-quote-left"></i>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus dolor<br>
+                                        recusandae atque neque velit voluptatem praesentium id labore, quisquam,
+                                        eligendi<br>
+                                        rem similique aliquam sit.<br>
+                                        Dignissimos voluptas necessitatibus voluptatibus ipsum rerum.
+                                    </div>
+
+                                    <div class="testimonial-detail">
+                                        <div class="testimonial-img">
+                                            <img src="images/girl.jpg"> <!--57.44 -->
+                                        </div>
+
+                                        <div class="testimonial-name">
+                                            <h5>Johndove</h5>
+                                            <!-- <p>Data Analysis</p> -->
+                                        </div>
+                            </td>
+
+                            <td style="width: 100px;">
+                                <div class="testimonial">
+                                    <div class="testimonial-content">
+                                        <i class="fa fa-quote-left"></i>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus dolor<br>
+                                        recusandae atque neque velit voluptatem praesentium id labore, quisquam,
+                                        eligendi<br>
+                                        rem similique aliquam sit.<br>
+                                        Dignissimos voluptas necessitatibus voluptatibus ipsum rerum.
+                                    </div>
+
+                                    <div class="testimonial-detail">
+                                        <div class="testimonial-img">
+                                            <img src="images/boy.jpg"> <!--57.44 -->
+                                        </div>
+
+                                        <div class="testimonial-name">
+                                            <h5>Johndove</h5>
+                                            <!-- <p>Data Analysis</p> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </marquee>
+            </div>
+        </div>
+    </section>
+
+    <section class="hidden">
+        <div class="main-section">
+            <div class="container">
+                <h2 class="heading-text">Gallery</h2>
+                <span class="heading-border"></span>
+                <div class="gallery">
+                    <div class="width-25"><img src="images/gallery-2.jpg" alt=""></div>
+                    <div class="width-25"><img src="images/gallery-2.jpg" alt=""></div>
+                    <div class="width-25"><img src="images/gallery-4.jpg" alt=""></div>
+                    <div class="width-25"><img src="images/gallery-4.jpg" alt=""></div>
+                    <div class="width-25"><img src="images/gallery-5.jpg" alt=""></div>
+                    <div class="width-25"><img src="images/gallery-6.jpg" alt=""></div>
+                    <div class="width-25"><img src="images/gallery-8.jpg" alt=""></div>
+                    <div class="width-25"><img src="images/gallery-8.jpg" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hidden">
+        <div class="main-section">
+            <div class="container">
+                <div class="width-50">
+                    <div class="our-teacher">
+                        <h3>Featured Teacher</h3>
+                        <h2 class="heading-text">Meet Our Teacher</h2>
+                        <span class="heading-border"></span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque reiciendis at esse voluptatum
+                            eum
+                            eius aspernatur quibusdam consequatur sequi ipsa ipsum rem qui pariatur quaerat culpa
+                            deserunt,
+                            porro modi facere doloremque fugit fugiat debitis. Culpa?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ullam, minus a qui impedit
+                            magni quo iste mollitia commodi perferendis, accusamus libero facilis culpa incidunt
+                            perspiciatis accusantium sapiente dolores. Vero debitis maiores expedita distinctio amet?
+                        </p>
+                        <a href="">Career with us</a>
+
+                    </div>
+
+                </div>
+
+                <div class="width-50">
+                    <!-- <div class="width-50">
+                    <div class="meet-tech">
+                        <img src="images/teacher-1.jpg" alt="">
+                    </div>
+                    <div class="meet-tech-dev">
+                        <h5>Mark alen</h5>
+                        <p>Chairman</p>
+                    </div>
+                </div> -->
+                    <div class="container-card">
+                        <!-- <div style="display: flex; flex-direction: row;"> -->
+                        <div class="card-two">
+                            <img class="card-teacher-image" src="images/teacher-1.jpg" alt="">
+                            <div class="card-inner-text">
+                                <h4>Teacher 1</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut culpa atque officia
+                                    saepe
+                                    ipsum quidem doloremque dolore provident tempore possimus.</p>
+                                <p class="bottom">best teacher-1</p>
+
+                            </div>
+                        </div>
+
+                        <div class="card-two">
+                            <img class="card-teacher-image" src="images/teacher-2.jpg" alt="">
+                            <div class="card-inner-text">
+                                <h4>Teacher 1</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut culpa atque officia
+                                    saepe
+                                    ipsum quidem doloremque dolore provident tempore possimus.</p>
+                                <p class="bottom">best teacher-1</p>
+                            </div>
+                        </div>
+
+                        <div class="card-two">
+                            <img class="card-teacher-image" src="images/teacher-3.jpg" alt="">
+                            <div class="card-inner-text">
+                                <h4>Teacher 1</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut culpa atque officia
+                                    saepe
+                                    ipsum quidem doloremque dolore provident tempore possimus.</p>
+                                <p class="bottom">best teacher-1</p>
+                            </div>
+                        </div>
+
+                        <div class="card-two">
+                            <img class="card-teacher-image" src="images/teacher-4.jpg" alt="">
+                            <div class="card-inner-text">
+                                <h4>Teacher 1</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut culpa atque officia
+                                    saepe
+                                    ipsum quidem doloremque dolore provident tempore possimus.</p>
+                                <p class="bottom">best teacher-1</p>
+                            </div>
+                            <!-- </div> -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- <div class="footer-section">
+        <div class="container">
+            <div class="width-25">
+                <div class="footer-link">
+                    <h2>Global Campus</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam minus iure ea explicabo nemo et!
+                        Enim quas optio omnis eius sequi, iste, eos necessitatibus repudiandae ratione reiciendis
+                        pariatur consequatur non.</p>
+                    <ul class="social-icon">
+                        <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fa fa-whatsapp"></i></a></li>
+                        <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                        <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="width-25">
+                <div class="footer-link">
+                    <h2>Global Campus</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam minus iure ea explicabo nemo et!
+                        Enim quas optio omnis eius sequi, iste, eos necessitatibus repudiandae ratione reiciendis
+                        pariatur consequatur non.</p>
+                    <ul class="social-icon">
+                        <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fa fa-whatsapp"></i></a></li>
+                        <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                        <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="width-25">
+                <div class="footer-link newsletter">
+                    <h2>newsletter</h2>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <input type="text" name="" placeholder="E-mail">
+                    <button>Subscribe Now</button>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <footer class="footer">
+        <section class="footer-content">
+            <div class="content">
+                <div class="top">
+                    <div class="logo-details">
+                        <!-- <i class="fab fa-slack"></i> -->
+                        <img src="./images/logo.png" alt="" style="width: 50px;">
+                        <span class="logo_name">Dream Academia School for Excellence</span>
+                    </div>
+                    <div class="media-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="link-boxes">
+                    <ul class="box">
+                        <li class="link_name">Company</li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Get started</a></li>
+                    </ul>
+                    <ul class="box">
+                        <li class="link_name">Services</li>
+                        <li><a href="#">App design</a></li>
+                        <li><a href="#">Web design</a></li>
+                        <li><a href="#">Logo design</a></li>
+                        <li><a href="#">Banner design</a></li>
+                    </ul>
+                    <ul class="box">
+                        <li class="link_name">Account</li>
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">My account</a></li>
+                        <li><a href="#">Prefrences</a></li>
+                        <li><a href="#">Purchase</a></li>
+                    </ul>
+                    <ul class="box">
+                        <li class="link_name">Courses</li>
+                        <li><a href="#">HTML & CSS</a></li>
+                        <li><a href="#">JavaScript</a></li>
+                        <li><a href="#">Photography</a></li>
+                        <li><a href="#">Photoshop</a></li>
+                    </ul>
+                    <ul class="box input-box">
+                        <li class="link_name">Subscribe</li>
+                        <li><input type="text" placeholder="Enter your email"></li>
+                        <li><input type="button" value="Subscribe"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bottom-details">
+                <div class="bottom_text">
+                    <span class="copyright_text">Copyright © 2021 <a href="#">Logo.</a>All rights reserved</span>
+                    <span class="policy_terms">
+                        <a href="#">Privacy policy</a>
+                        <a href="#">Terms & condition</a>
+                    </span>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+</main>
+
+
+</body>
+<script src="script.js"></script>
+
+</html>

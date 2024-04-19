@@ -1,0 +1,19 @@
+.main-container{
+    height: 300vh;
+}
+.hidden{
+    opacity: 0;
+    height: 180vh;
+    filter: blur(5px);
+    /* transform: translateX(-100%); */
+    transition: opacity 1s; /* Only transition opacity */
+    /* transition: all 1s; */
+
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    /* transform: translateX(78); */
+
+}

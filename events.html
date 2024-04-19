@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>events</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
+
+      /* body {
+        margin: 0;
+        padding: 0;
+        font-family: "Roboto Condensed", sans-serif;
+      } */
+
+      section {
+        display: grid;
+        grid-gap: 0;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+          "main main"
+          "event event";
+        background-image: url(https://s3.ca-central-1.amazonaws.com/image-web-frankie/Music+show.jpg);
+        background-size: cover;
+        background-position: center;
+        min-height: 100vh;
+      }
+
+      @media (min-width: 1200px) {
+        section {
+          grid-template-areas:
+            "main event"
+            "main event";
+        }
+      }
+
+      .leftBox {
+        grid-area: main;
+        padding: 50px;
+        box-sizing: border-box;
+      }
+
+      section .leftBox .content {
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 40px;
+        transition: 0.5s;
+      }
+
+      section .leftBox .content:hover {
+        /* background-color: #e91e63; */
+        background-color: #4177f3;
+      }
+
+      section .leftBox .content h1 {
+        margin: 0;
+        padding: 0;
+        font-size: 50px;
+        text-transform: uppercase;
+      }
+
+      section .leftBox .content p {
+        margin: 10px 0 0;
+        padding: 0;
+      }
+
+      section .events {
+        grid-area: event;
+        /* background-color: rgba(0, 0, 0, 0.5); */
+        box-sizing: border-box;
+      }
+
+      section .events ul {
+        margin: 0;
+        padding: 40px;
+        list-style: none;
+      }
+
+      section .events ul li {
+        background-color: #fff;
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: 30% 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 0;
+        grid-template-areas:
+          "time time"
+          "detail detail";
+        margin-bottom: 20px;
+      }
+
+      @media (min-width: 768px) {
+        section .events ul li {
+          grid-template-areas:
+            "time detail"
+            "time detail";
+        }
+      }
+
+      section .events ul li .time {
+        grid-area: time;
+        position: relative;
+        padding: 8% 40%;
+        background-color: #262626;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        transition: 0.5s;
+      }
+
+      section .events ul li:hover .time {
+        /* background-color: #e91e63; */
+        background-color: #4177f3;
+      }
+
+      section .events ul li .time h2 {
+        margin: 0;
+        padding: 0;
+        color: #fff;
+        font-size: 60px;
+        line-height: 30px;
+      }
+
+      section .events ul li .time h2 span {
+        font-size: 30px;
+      }
+
+      section .events ul li .details {
+        grid-area: detail;
+        padding: 20px 20px 32px;
+        background-color: #fff;
+        box-sizing: border-box;
+      }
+
+      section .events ul li .details h3 {
+        margin: 0;
+        padding: 0;
+        font-size: 22px;
+      }
+
+      section .events ul li .details p {
+        margin: 10px 0 0;
+        padding: 0;
+        font-size: 16px;
+      }
+
+      section .events ul li .details a {
+        display: inline-block;
+        text-decoration: none;
+        padding: 10px 15px;
+        border: 2px solid #262626;
+        margin-top: 16px;
+        font-size: 18px;
+        transition: 0.5s;
+      }
+
+      section .events ul li .details a:hover {
+        background-color: #e91e63;
+        color: #fff;
+        border-color: #e91e63;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="width-100 header">
+      <div class="container">
+        <div class="width-25 head-left">
+          <ul>
+            <li>
+              <a href="#"><i class="fa fa-lock"></i> Staff Login</a>
+            </li>
+            <li id="student-login">
+              <a href="#"><i class="fa fa-lock"></i> Student Login</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="width-50">
+          <marquee class="notification">
+            <!-----8.41 ./images/new.gif----->
+            <span><img src="/images/new.gif" /></span> Examination Notification
+            <span><img src="./images/new.gif" /></span>Get Ready To Explore The
+            Genius In You With Genius 2023
+            <span><img src="./images/new.gif" /></span> Enrollment Form
+            Notification 2022 23 Batch
+          </marquee>
+        </div>
+
+        <div class="width-25 head-right">
+          <ul>
+            <li>
+              <a href="#">
+                <i class="fa fa-comment"> </i>Addmissions Open
+                <span class="head-span"> <img src="./images/new.gif" /></span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#"><i class="fa fa-rss"></i>Blogs</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="width-30 logo">
+        <img src="./images/logo.png" />
+        <!--logo pic-->
+        <p>Dream Academia School for Excellence</p>
+      </div>
+
+      <div class="width-70 head-menu">
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="./aboutus.html">About us</a></li>
+          <li><a href="#">Admission</a></li>
+          <li><a href="./gallery.html">Gallery</a></li>
+          <li><a href="#">Notice Board</a></li>
+          <li><a href="./events.html">Event</a></li>
+          <li><a href="/contactus.html">Contact us</a></li>
+        </ul>
+      </div>
+    </div>
+    <section>
+      <div class="leftBox">
+        <div class="content">
+          <h1>Events And Shows</h1>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged.
+          </p>
+        </div>
+      </div>
+      <div class="events">
+        <ul>
+          <li>
+            <div class="time">
+              <h2>24<br /><span>June</span></h2>
+            </div>
+            <div class="details">
+              <h3>Where does it come from</h3>
+              <p>
+                Contrary to popular belief, Lorem Ipsum is not simply random
+                text. It has roots in a piece of classical Latin literature from
+                45 BC, making it over 2000 years old.
+              </p>
+              <a href="https://codepen.io/collection/XdWJOQ/">View Details</a>
+            </div>
+            <div style="clear: both"></div>
+          </li>
+          <li>
+            <div class="time">
+              <h2>24<br /><span>June</span></h2>
+            </div>
+            <div class="details">
+              <h3>Where does it come from</h3>
+              <p>
+                Contrary to popular belief, Lorem Ipsum is not simply random
+                text. It has roots in a piece of classical Latin literature from
+                45 BC, making it over 2000 years old.
+              </p>
+              <a href="https://codepen.io/collection/XdWJOQ/">View Details</a>
+            </div>
+            <div style="clear: both"></div>
+          </li>
+          <li>
+            <div class="time">
+              <h2>24<br /><span>June</span></h2>
+            </div>
+            <div class="details">
+              <h3>Where does it come from</h3>
+              <p>
+                Contrary to popular belief, Lorem Ipsum is not simply random
+                text. It has roots in a piece of classical Latin literature from
+                45 BC, making it over 2000 years old.
+              </p>
+              <a href="https://codepen.io/collection/XdWJOQ/">View Details</a>
+            </div>
+            <div style="clear: both"></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </body>
+</html>
